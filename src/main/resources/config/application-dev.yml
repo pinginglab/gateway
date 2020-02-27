@@ -43,7 +43,7 @@ spring:
       port: 8500
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mariadb://localhost:3306/gateway
+    url: jdbc:mariadb://localhost:13306/gateway
     username: dev
     password: PUKtj1hO1Rs
     hikari:
