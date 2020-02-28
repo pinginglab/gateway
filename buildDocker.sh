@@ -1,5 +1,5 @@
 #!/bin/bash
-./gradlew bootWar -Pprod buildDocker
+./gradlew bootJar -Pprod jibDockerBuild
 #docker tag gateway:latest registry.cn-hangzhou.aliyuncs.com/pingsec/compose/gateway:latest
-docker tag gateway:latest 127.0.0.1:5000/compose/gateway:latest
-docker push 127.0.0.1:5000/compose/gateway:latest
+docker tag gateway:latest ccr.ccs.tencentyun.com/pingsec/compose/gateway:1.0
+docker push ccr.ccs.tencentyun.com/pingsec/compose/gateway:1.0
